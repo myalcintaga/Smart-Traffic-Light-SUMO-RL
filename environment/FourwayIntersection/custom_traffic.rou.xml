@@ -1,0 +1,32 @@
+<routes>
+    <vType id="standard_car" accel="2.6" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="15" guiShape="passenger"/>
+    <vType id="heavy_car" accel="1.0" decel="3.5" sigma="0.5" length="7" minGap="3.0" maxSpeed="10" guiShape="truck"/>
+    
+    <route id="N_to_S" edges="264388791#1 264388791#3"/>
+    <route id="N_to_E" edges="264388791#1 169458918#1"/>
+    <route id="N_to_W" edges="264388791#1 884871893#3"/>
+
+    <route id="S_to_N" edges="252967348#1 252967348#3"/>
+    <route id="S_to_E" edges="252967348#1 169458918#1"/>
+    <route id="S_to_W" edges="252967348#1 884871893#3"/>
+
+    <route id="E_to_W" edges="884871893#1 884871893#3"/>
+    <route id="E_to_N" edges="884871893#1 252967348#3"/>
+    <route id="E_to_S" edges="884871893#1 264388791#3"/>
+
+    <route id="W_to_E" edges="169460470#1 169458918#1"/>
+    <route id="W_to_N" edges="169460470#1 252967348#3"/>
+    <route id="W_to_S" edges="169460470#1 264388791#3"/>
+    <flow id="flow_N_S" type="standard_car" route="N_to_S" begin="0" end="3600" probability="0.1388888888888889"/>
+    <flow id="flow_N_E" type="standard_car" route="N_to_E" begin="0" end="3600" probability="0.06944444444444445"/>
+    <flow id="flow_N_W" type="standard_car" route="N_to_W" begin="0" end="3600" probability="0.06944444444444445"/>
+    <flow id="flow_S_N" type="standard_car" route="S_to_N" begin="0" end="3600" probability="0.1388888888888889"/>
+    <flow id="flow_S_E" type="standard_car" route="S_to_E" begin="0" end="3600" probability="0.06944444444444445"/>
+    <flow id="flow_S_W" type="standard_car" route="S_to_W" begin="0" end="3600" probability="0.06944444444444445"/>
+    <flow id="flow_E_W" type="standard_car" route="E_to_W" begin="0" end="3600" probability="0.1388888888888889"/>
+    <flow id="flow_E_N" type="standard_car" route="E_to_N" begin="0" end="3600" probability="0.06944444444444445"/>
+    <flow id="flow_E_S" type="standard_car" route="E_to_S" begin="0" end="3600" probability="0.06944444444444445"/>
+    <flow id="flow_W_E" type="standard_car" route="W_to_E" begin="0" end="3600" probability="0.1388888888888889"/>
+    <flow id="flow_W_N" type="standard_car" route="W_to_N" begin="0" end="3600" probability="0.06944444444444445"/>
+    <flow id="flow_W_S" type="standard_car" route="W_to_S" begin="0" end="3600" probability="0.06944444444444445"/>
+</routes>
