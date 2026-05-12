@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-01-14T22:09:15.110631+03:00 by Eclipse SUMO GUI 1.25.0
+<!-- generated on 2026-04-22T07:12:45.198632+03:00 by Eclipse SUMO GUI 1.25.0
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="c:\Users\mehme\Desktop\final_project_repo\Smart-Traffic-Light-SUMO-RL\environment\FourwayIntersection\osm.net.xml.gz"/>
-        <route-files value="c:\Users\mehme\Desktop\final_project_repo\Smart-Traffic-Light-SUMO-RL\environment\FourwayIntersection\mild_traffic.rou.xml"/>
-        <additional-files value="c:\Users\mehme\Desktop\final_project_repo\Smart-Traffic-Light-SUMO-RL\environment\FourwayIntersection\osm.poly.xml.gz,c:\Users\mehme\Desktop\final_project_repo\Smart-Traffic-Light-SUMO-RL\environment\FourwayIntersection\output.add.xml"/>
+        <route-files value="c:\Users\mehme\Desktop\final_project_repo\Smart-Traffic-Light-SUMO-RL\environment\FourwayIntersection\realistic_traffic.rou.xml"/>
+        <additional-files value="c:\Users\mehme\Desktop\final_project_repo\Smart-Traffic-Light-SUMO-RL\environment\FourwayIntersection\osm.poly.xml.gz"/>
     </input>
 
     <output>
@@ -16,6 +16,8 @@
 
     <processing>
         <ignore-route-errors value="true"/>
+        <time-to-teleport value="150"/>
+        <waiting-time-memory value="10000"/>
         <tls.actuated.jam-threshold value="30"/>
     </processing>
 
@@ -31,24 +33,25 @@
     </report>
 
     <traci_server>
-        <remote-port value="52934"/>
+        <remote-port value="62105"/>
     </traci_server>
 
     <gui_only>
         <gui-settings-file value="c:\Users\mehme\Desktop\final_project_repo\Smart-Traffic-Light-SUMO-RL\environment\FourwayIntersection\osm.view.xml"/>
+        <start value="true"/>
     </gui_only>
 
 </sumoConfiguration>
 -->
 
 <statistics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/statistic_file.xsd">
-    <performance clockBegin="41815.91" clockEnd="41867.97" clockDuration="52.07" traciDuration="2.15" realTimeFactor="19.84" vehicleUpdatesPerSecond="288.46" personUpdatesPerSecond="0.00" begin="0.00" end="1033.00" duration="1033.00"/>
-    <vehicles loaded="439" inserted="439" running="15" waiting="0"/>
+    <performance clockBegin="31885.32" clockEnd="31947.09" clockDuration="61.77" traciDuration="0.86" realTimeFactor="14.13" vehicleUpdatesPerSecond="527.64" personUpdatesPerSecond="0.00" begin="0.00" end="873.00" duration="873.00"/>
+    <vehicles loaded="507" inserted="437" running="48" waiting="0"/>
     <teleports total="0" jam="0" yield="0" wrongLane="0"/>
-    <safety collisions="0" emergencyStops="5" emergencyBraking="6"/>
+    <safety collisions="0" emergencyStops="0" emergencyBraking="0"/>
     <persons loaded="0" running="0" jammed="0"/>
     <personTeleports total="0" abortWait="0" wrongDest="0"/>
-    <vehicleTripStatistics count="424" routeLength="150.60" speed="5.30" duration="34.88" waitingTime="14.82" timeLoss="23.82" departDelay="4.78" departDelayWaiting="-1.00" totalTravelTime="14789.00" totalDepartDelay="2025.00"/>
+    <vehicleTripStatistics count="389" routeLength="333.49" speed="5.35" duration="76.16" waitingTime="32.44" timeLoss="54.87" departDelay="1.35" departDelayWaiting="-1.00" totalTravelTime="29627.00" totalDepartDelay="526.00"/>
     <pedestrianStatistics number="0" routeLength="0.00" duration="0.00" timeLoss="0.00"/>
     <rideStatistics number="0"/>
     <transportStatistics number="0"/>
